@@ -1,1 +1,0 @@
-{'Hyderabad', 'Lodhran', 'Lahore', 'Jhelum', 'Peshawar', 'Faisalabad', 'Islamabad', 'Sargodha', 'Sukkur', 'Ziarat', 'Dadu', 'Quetta', 'Multan', 'Karachi', 'Badin', 'Chakwal', 'Rawalpindi'}
