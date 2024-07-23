@@ -20,7 +20,7 @@ call packages relative to network performance (signal strength, data throughput,
 9. Which regions in the country obtain the best performance/cost ratio?
 10. Which telecom provider performs reasonably well across all regions?
 
-How to Check Data Usage on Your Device:
+How to Check Data Usage on a Device:
 
 For Android:
 Go to Settings > Apps. Scroll down to the desired application. We see data usage by mobile data after selecting that application from the list.
