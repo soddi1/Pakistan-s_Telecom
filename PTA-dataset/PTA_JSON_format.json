@@ -1,0 +1,168 @@
+{
+  "2019": {
+    "First half": {
+      "Province1": {
+        "City": {
+          "KPIs": {
+            "KPI 1": "Value 1",
+            "KPI 2": "Value 2",
+            "KPI 3": "Value 3"
+          }
+        },
+        "Road": {
+          "KPIs": {
+            "KPI 1": "Value 1",
+            "KPI 2": "Value 2",
+            "KPI 3": "Value 3"
+          }
+        }
+      },
+      "Province2": {
+        "City": {
+          "KPIs": {
+            "KPI 1": "Value 1",
+            "KPI 2": "Value 2",
+            "KPI 3": "Value 3"
+          }
+        },
+        "Road": {
+          "KPIs": {
+            "KPI 1": "Value 1",
+            "KPI 2": "Value 2",
+            "KPI 3": "Value 3"
+          }
+        }
+      },
+      "Province3": {
+        "City": {
+          "KPIs": {
+            "KPI 1": "Value 1",
+            "KPI 2": "Value 2",
+            "KPI 3": "Value 3"
+          }
+        },
+        "Road": {
+          "KPIs": {
+            "KPI 1": "Value 1",
+            "KPI 2": "Value 2",
+            "KPI 3": "Value 3"
+          }
+        }
+      },
+      "Province4": {
+        "City": {
+          "KPIs": {
+            "KPI 1": "Value 1",
+            "KPI 2": "Value 2",
+            "KPI 3": "Value 3"
+          }
+        },
+        "Road": {
+          "KPIs": {
+            "KPI 1": "Value 1",
+            "KPI 2": "Value 2",
+            "KPI 3": "Value 3"
+          }
+        }
+      },
+      "Province5": {
+        "City": {
+          "KPIs": {
+            "KPI 1": "Value 1",
+            "KPI 2": "Value 2",
+            "KPI 3": "Value 3"
+          }
+        },
+        "Road": {
+          "KPIs": {
+            "KPI 1": "Value 1",
+            "KPI 2": "Value 2",
+            "KPI 3": "Value 3"
+          }
+        }
+      }
+    },
+    "Second half": {
+      "Province1": {
+        "City": {
+          "KPIs": {
+            "KPI 4": "Value 4",
+            "KPI 5": "Value 5",
+            "KPI 6": "Value 6"
+          }
+        },
+        "Road": {
+          "KPIs": {
+            "KPI 4": "Value 4",
+            "KPI 5": "Value 5",
+            "KPI 6": "Value 6"
+          }
+        }
+      },
+      "Province2": {
+        "City": {
+          "KPIs": {
+            "KPI 4": "Value 4",
+            "KPI 5": "Value 5",
+            "KPI 6": "Value 6"
+          }
+        },
+        "Road": {
+          "KPIs": {
+            "KPI 4": "Value 4",
+            "KPI 5": "Value 5",
+            "KPI 6": "Value 6"
+          }
+        }
+      },
+      "Province3": {
+        "City": {
+          "KPIs": {
+            "KPI 4": "Value 4",
+            "KPI 5": "Value 5",
+            "KPI 6": "Value 6"
+          }
+        },
+        "Road": {
+          "KPIs": {
+            "KPI 4": "Value 4",
+            "KPI 5": "Value 5",
+            "KPI 6": "Value 6"
+          }
+        }
+      },
+      "Province4": {
+        "City": {
+          "KPIs": {
+            "KPI 4": "Value 4",
+            "KPI 5": "Value 5",
+            "KPI 6": "Value 6"
+          }
+        },
+        "Road": {
+          "KPIs": {
+            "KPI 4": "Value 4",
+            "KPI 5": "Value 5",
+            "KPI 6": "Value 6"
+          }
+        }
+      },
+      "Province5": {
+        "City": {
+          "KPIs": {
+            "KPI 4": "Value 4",
+            "KPI 5": "Value 5",
+            "KPI 6": "Value 6"
+          }
+        },
+        "Road": {
+          "KPIs": {
+            "KPI 4": "Value 4",
+            "KPI 5": "Value 5",
+            "KPI 6": "Value 6"
+          }
+        }
+      }
+    }
+  }
+}
