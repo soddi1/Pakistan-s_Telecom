@@ -20,7 +20,7 @@ What are the latest offers for data and call packages by x operator that I can b
 
 Which city has the worst/best value of x kpi?
 
-How has the cost/service ratio progressed over the years for x telecom provider? (Analyze the historical trend of the cost of data and
+How has the cost/service ratio progressed over the years for x telecom provider? (Analyze the historical trend of the cost of data and 
 call packages relative to network performance (signal strength, data throughput, call drop rates))
 
 Which regions in the country obtain the best performance/cost ratio?
