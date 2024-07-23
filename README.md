@@ -7,14 +7,24 @@ PTA qos-survey dataset: https://www.pta.gov.pk/category/qos-survey-959959384-202
 Queries that our project should be able to answer:
 
 Which provider is best in x city for y service? (3G, 4G throughput, call completion ratio, speech quality etc.)
+
 Which data / off net calls/ on net calls/ application specific data package is the cheapest for x service provider?
+
 Which service provider has the cheapest data / off net calls/ on net calls/ application specific data package?
+
 Which telecom providers improved their services from year x to year y?
+
 Which services were improved upon by telecom provider x from year 1 to year 2?
+
 What are the latest offers for data and call packages by x operator that I can benefit from given my usage patterns or location of usage?
+
 Which city has the worst/best value of x kpi?
-How has the cost/service ratio progressed over the years for x telecom provider? (Analyze the historical trend of the cost of data and call packages relative to network performance (signal strength, data throughput, call drop rates))
+
+How has the cost/service ratio progressed over the years for x telecom provider? (Analyze the historical trend of the cost of data and
+call packages relative to network performance (signal strength, data throughput, call drop rates))
+
 Which regions in the country obtain the best performance/cost ratio?
+
 Which telecom provider performs reasonably well across all regions?
 
 How to Check Data Usage on Your Device:
