@@ -7,8 +7,8 @@ import pyperclip  # To interact with the clipboard
 import json
 
 # Replace these with your actual email and password
-email = "andrei_cirlig@yahoo.com"
-password = "012018Andreea,"
+email = "***"
+password = "***"
 
 # Path to the document to upload
 document_path = r"C:\Users\Dell\Desktop\A_Project\Flooding\OpenCelliD data\Flooding\PTA-Data-Analysis\PTA-dataset\2018\cmo_qos_survey_2018_030119.pdf"
