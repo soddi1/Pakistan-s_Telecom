@@ -1,9 +1,8 @@
-import fitz  
+import fitz
 import nltk
 import json
 import PyPDF2
 import os
-
 
 def extract_text_from_pdf(pdf_path):
     doc = fitz.open(pdf_path)
@@ -15,16 +14,16 @@ def extract_text_from_pdf(pdf_path):
     return text
 
 def identify_cities(text):
-    with open('output.json', 'r') as file:
+    with open('pak_city_names.json', 'r') as file:
         cities = json.load(file)
     
     city_names = set(city['name'].lower() for city in cities)
     cities_mentioned = set()
-    words = text.lower().split()
-    for word in words:
-        clean_word = ''.join(char for char in word if char.isalnum())
-        if clean_word in city_names:
-            cities_mentioned.add(clean_word.capitalize())
+    tokens = nltk.word_tokenize(text.lower())
+    text = ' '.join(tokens)
+    for city in city_names:
+        if city in text:
+            cities_mentioned.add(city.title())
     return list(cities_mentioned)
 
 def save_pdf_in_chunks(pdf_writer, file_name, city_dir):
@@ -34,25 +33,28 @@ def save_pdf_in_chunks(pdf_writer, file_name, city_dir):
         return 
 
     if total_pages > 2:
-        # loop in chunks of two pages.
         for start_page in range(0, total_pages, 2):
             end_page = start_page + 1
-            if end_page >= total_pages:  
+            if end_page >= total_pages:
                 end_page = total_pages - 1
             
-            sub_doc = fitz.open()  
+            sub_doc = fitz.open()
             for i in range(start_page, end_page + 1):
-                sub_doc.insert_pdf(pdf_writer, from_page=i, to_page=i)  
+                sub_doc.insert_pdf(pdf_writer, from_page=i, to_page=i)
             chunk_name = f"{file_name}_pages_{start_page + 1}_to_{end_page + 1}.pdf"
             sub_doc.save(os.path.join(city_dir, chunk_name))
             sub_doc.close()
     else:
         pdf_writer.save(os.path.join(city_dir, file_name))
 
-
 def classify_and_split_by_extension(doc, output_dir, city):
     city_lower = city.lower()
-    city_dir = os.path.join(output_dir, city_lower)
+    if " to " in city_lower:
+        sub_folder = "roads"
+    else:
+        sub_folder = "cities"
+    
+    city_dir = os.path.join(output_dir, sub_folder, city_lower)
     if not os.path.exists(city_dir):
         os.makedirs(city_dir)
 
@@ -84,7 +86,6 @@ def classify_and_split_by_extension(doc, output_dir, city):
     pdf_writer_maps.close()
     pdf_writer_tables.close()
 
-
 def split_pdf_by_cities(input_pdf, city_list, output_dir):
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
@@ -106,5 +107,5 @@ def process_files_in_directory(main_folder):
                 print(f"Processed {pdf_path}: Cities mentioned in the PDF:", cities)
 
 # directory containing the pdfs to be split
-main_folder = r'E:\Desktop\LUMS\summer2024\Literature Review\data\pdf split\Pta_data'
+main_folder = r'C:\Users\Dell\Desktop\A_Project\Flooding\OpenCelliD data\Flooding\telecome_info\PTA-dataset'
 process_files_in_directory(main_folder)
